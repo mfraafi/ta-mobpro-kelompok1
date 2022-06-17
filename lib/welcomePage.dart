@@ -1,6 +1,8 @@
 import 'package:addpage/homepage.dart';
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
 
@@ -34,7 +36,7 @@ class WelcomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HomePage()),
+                      MaterialPageRoute(builder: (context) => Login()),
                     );
                   },
                   child: Text('Masuk'),

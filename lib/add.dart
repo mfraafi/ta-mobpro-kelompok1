@@ -45,9 +45,16 @@ class _tambahState extends State<tambah> {
       .toList();
   String? _btn2SelectedVal;
 
+  final _formKey = GlobalKey<FormState>();
+  final _heroName = TextEditingController();
+  final _heroDescription = TextEditingController();
+  final _heroRole = TextEditingController();
+  final _heroImage = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _formKey,
       appBar: AppBar(
         backgroundColor: Colors.black,
         leading: IconButton(
@@ -64,7 +71,8 @@ class _tambahState extends State<tambah> {
           padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
           children: [
             // Nama Hero
-            TextField(
+            TextFormField(
+              controller: _heroName,
               decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: 'Hero Name',
@@ -73,6 +81,7 @@ class _tambahState extends State<tambah> {
             SizedBox(height: 24.0),
             // Deskripsi Hero
             TextFormField(
+              controller: _heroDescription,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: 'Story of the hero',
@@ -114,6 +123,12 @@ class _tambahState extends State<tambah> {
               Image.file(this._imageFile!),
             const SizedBox(
               height: 40,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                if (_formKey.currentState!.validate()) {}
+              },
+              child: Text('Tambah'),
             ),
           ],
         ),

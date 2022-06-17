@@ -1,8 +1,10 @@
 import 'package:addpage/about.dart';
+import 'package:addpage/utils/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:backdrop/backdrop.dart';
 import 'add.dart';
+import 'login.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -23,6 +25,20 @@ class _HomePageState extends State<HomePage> {
     return BackdropScaffold(
       appBar: BackdropAppBar(
         title: const Text('Hero Catalog'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.exit_to_app_outlined),
+            onPressed: () {
+              AuthService.signOut();
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const Login(),
+                ),
+              );
+            },
+          ),
+        ],
       ),
       headerHeight: 120.0,
       backgroundColor: Colors.black,
