@@ -1,35 +1,37 @@
 # Tugas Akhir Mobile Programming Kelompok 1
 
-## Valorant Heroes
+## Valorant Agents
 
-Project ini merupakan guide atau penjelesan tentang Hero-hero yang ada di game Valorant
+Project ini merupakan guide atau penjelesan tentang agent-agent yang ada di game Valorant
 
-Bertujuan untuk mempermudah player Valorant dalam memahami heronya tanpa harus membuka gamenya.
+Bertujuan untuk mempermudah player Valorant dalam memahami agentnya tanpa harus membuka gamenya.
 
-features: Login, menampilkan, menambahkan data, tampilan menarik, tema gelap.
+features: Login, menampilkan listview, tampilan menarik.
 
-Login itu untuk hak editor untuk menambahkan data, jika tidak login maka tidak bisa menambahkan data.
+## SS Running menggunakan emulator Google Pixel 5
 
-## SS Running belum fix
+Welcome Page
 
-Selamat Datang
+![Screenshot_1655642078](https://user-images.githubusercontent.com/101640978/174481520-46de843e-dd28-4667-afe4-0ccd13d1e17f.png)
 
-![welcome](https://user-images.githubusercontent.com/101640978/174070269-0881bef4-d1d0-485e-996a-a18890bedab5.png)
+Login Page
 
-Halaman Home
+![Screenshot_1655642086](https://user-images.githubusercontent.com/101640978/174481534-1f318774-4adb-496c-bf2e-4909215a47f1.png)
 
-![homepage](https://user-images.githubusercontent.com/101640978/174070497-12a1d1ce-56ae-4b5e-8a25-f47eb71d716e.png)
+Register Page
 
-Appbar BackDrop
+![Screenshot_1655642089](https://user-images.githubusercontent.com/101640978/174481557-094a1d8e-dc93-4d14-b712-ece9959afda0.png)
 
-![backdrop appbar](https://user-images.githubusercontent.com/101640978/174070725-cec9d3a5-8709-446f-a6ae-c0022dc01b23.png)
+Home Page
 
-About (textnya hitam, jadinya tidak terlihat)
+![Screenshot_1655642140](https://user-images.githubusercontent.com/101640978/174481568-8c29371b-d7d7-4ad9-8bfa-c22f4a94f14e.png)
 
-![about](https://user-images.githubusercontent.com/101640978/174070941-577d4f54-30cb-478b-8f45-180eca467466.png)
+Agent Page
 
-Tambah Data, ada nama hero, deskripsi, role(fungsi array yg ada di db. isinya ada = [duelist, controller, initiator])
+![Screenshot_1655642157](https://user-images.githubusercontent.com/101640978/174481632-6fc3489d-5444-4b66-810b-e90b4ae5a7ed.png)
 
-![tambah data](https://user-images.githubusercontent.com/101640978/174071182-c2b6dae6-0e30-4bdd-861c-ff362d944e09.png)
+Backdrop Appbar
 
-Untuk tampilan Login belum dimasukkin, karena kendala di firebase authentication error
+![Screenshot_1655642145](https://user-images.githubusercontent.com/101640978/174481612-622c9172-1b81-4c3f-8f21-00105e26222a.png)
+
+*Masih banyak kekurangan pada aplikasi ini karena keterbatasan wawasan dan pengalaman
